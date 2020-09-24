@@ -241,6 +241,9 @@ footer p a{
 }
 
 @media screen and (max-width: 900px){
+    .inicial-pag h3{
+        width:80%;
+    }
     .service-box,.blog-box{
         grid-template-columns: 1fr  ;
     }
