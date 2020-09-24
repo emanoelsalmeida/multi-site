@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #FFFFFF;
+}
+
+header ul {
+    list-style: none;
+     text-align: center;
+}
+header ul li {
+     display: inline-block;
+     margin: 35px 15px 30px 10px;
+ }
+header ul li a{
+     text-decoration: none;
+     color: black;
+     font-size: 2.6vh;
+ }
+header ul li:first-child a,header ul li a:hover{
+    color: #6F4D44
+}
+
+main h1{
+    color: #42302A;
+    font-size: 3.2em;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.inicial-pag{
+    background-color: #6F4D44;
+}
+.inicial-pag h1{
+   font-size: 3em;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    color:#FFFFFF;
+}
+.inicial-pag h3{
+    font-size: 1.2em;
+    color:#FFFFFF;
+    font-weight: 400;
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+}
+.inicial-pag h3:nth-child(3){
+    padding-bottom: 50px;
+}
+
+.service-box{
+    display: grid;
+    grid-template-columns: 25% 25% 25%  ;
+    grid-template-rows: 430px;
+    grid-gap: 20px;
+    justify-content: center;
+    align-content:flex-start;
+    width: 100%;
+}
+.service-item{
+    padding: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 1px 1px 18px #42302A;
+    margin: 50px 0;
+    
+}
+.service-item h2{
+    text-align: center;
+    font-size: 1.6em;
+    margin: 30px;
+}
+.service-item h3{
+    font-weight: 400
+}
+.service p{
+    text-align: center;
+    margin-bottom: 30px
+}
+
+.about{
+    background-color: #F2F2F3;
+}
+.about-box{
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    align-content:center;
+    width:100%;
+}
+.about-item{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #42302A;
+    margin: 50px 0;
+    justify-content: center;
+    align-items:center;
+}
+.about-item p{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.blog h1{
+    margin-bottom: 50px;
+}
+.blog-box{
+    display: grid;
+    grid-template-columns: 25% 25% 25%  ;
+    grid-template-rows: 570px;
+    grid-auto-rows: 570px;
+    grid-gap: 40px;
+    justify-content: center;
+    align-content:center;
+    width: 100%;
+}
+.blog-item{
+    padding: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 1px 1px 18px #42302A;
+}
+.blog-item img{
+    width: 100%;
+}
+.blog-item h2{
+    text-align: left;
+    font-size: 1.4em;
+    margin: 30px 0;
+    color: #42302A;
+}
+.blog-item p{
+    text-align:  left;
+    font-size: 1.2em;
+    margin: 30px 0;
+    font-weight: 300;
+}
+.blog-item p a{
+    font-weight: 700;
+    color: #A36213;
+}
+
+.contact{
+     background-color: #F2F2F3;
+    margin-top: 50px;
+}
+.contact h1{
+    margin-bottom: 50px;
+}
+.form-box{
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 400px;
+    justify-content: center;
+    align-content: center;
+}
+form{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    justify-content: center;
+}
+form .input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    justify-content:  center;
+    width: 80%;  
+}
+.input-fields input, .msg textarea{
+    margin: 10px 0;
+    background:transparent;
+    border:0;
+    border-bottom: 2px solid #A36213;;
+    padding:10px;
+    color: #A36213;
+    width:100%;
+        justify-content: center;
+}
+.msg textarea{
+    height: 80px;
+    width: 60%;
+}
+.input-fields button{
+    background-color: #A36213;
+    color: #A36213;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    width: 38%.
+}
+
+.whatsapp a{
+     display: inline-block;
+     width:5vw;
+     height: 10vh;
+     background: #40C351;
+     color: white;
+     text-decoration: none;
+     border-radius: 50%;
+     /*deixou redondo*/
+     position: fixed;
+    top: 580px;
+    right: 5%;
+     transition: 0.5s;
+}
+.whatsapp a img{
+    position: fixed;
+    top: 585px;
+    right: 5.5%;
+    width: 4vw;
+    
+}
+
+footer{
+    height: 5vh;
+     background-color: #A36213;
+}
+footer p {
+    color: white;
+    text-align: center;
+}
+footer p a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 900px){
+    .service-box,.blog-box{
+        grid-template-columns: 1fr  ;
+    }
+    
+    .form-box{
+            grid-template-columns: 90%;
+        justify-content: center;
+    }
+    .msg textarea{
+    height: 80px;
+    width: 100%;
+}
+    .whatsapp a{
+     display: inline-block;
+     width:13vw;
+     height: 8vh;
+     background: #40C351;
+     color: white;
+     text-decoration: none;
+     border-radius: 50%;
+     /*deixou redondo*/
+     position: fixed;
+    top: 580px;
+    right: 5%;
+     transition: 0.5s;
+}
+.whatsapp a img{
+    position: fixed;
+    top: 582px;
+    right: 5.5%;
+    width: 12vw;
+    
+}
+}
