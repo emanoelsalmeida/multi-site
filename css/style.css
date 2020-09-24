@@ -246,6 +246,7 @@ footer p a{
     }
     .blog-box{
         grid-template-rows: 650px;
+        grid-auto-rows: 650px;
     }
     .form-box{
             grid-template-columns: 90%;
