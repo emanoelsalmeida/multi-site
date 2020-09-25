@@ -258,23 +258,10 @@ footer p a{
     height: 80px;
     width: 100%;
 }
-    .whatsapp a{
-     display: inline-block;
-     width:15vw;
-     height: 8vh;
-     background: #40C351;
-     color: white;
-     text-decoration: none;
-     border-radius: 50%;
-     /*deixou redondo*/
-     position: fixed;
-    top: 580px;
-    right: 5%;
-     transition: 0.5s;
-}
+
 .whatsapp a img{
     position: fixed;
-    top: 587px;
+    top: 81vw;
     right: 5.5%;
     width: 12vw;
     
